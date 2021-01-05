@@ -1,12 +1,6 @@
-for x in [False, True]:
-    for y in [False, True]:
-        for z in [False, True]:
-            f = not (x or y) or (y == z)
-            print(int(x), int(y), int(z), "|", int(f))
-print("-------------")
-for x in [False, True]:
-    for y in [False, True]:
-        for z in [False, True]:
-            f = not (x or y) or (y == z)
-            if not f and not (x and not y and z):
-                print(int(z), int(x), int(y), "|", int(f))
+a = []
+for i in range(1016,7938):
+    if i % 3 == 0 and i % 7 != 0 and i % 17 != 0 and i % 19 != 0 and i % 27 != 0:
+        a.append(i)
+print(len(a))
+print(max(a))
