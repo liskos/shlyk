@@ -11,7 +11,7 @@ def func(x):
 
 for i in range(1,100000):
     a,b = func(i)
-    if a == 3 and b == 24:
+    if a == 3 and b == 21:
         print(i)
 
 
